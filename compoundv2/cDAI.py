@@ -71,7 +71,7 @@ class cDAI(Contract):
         """
         Retrieve DAI balance of address provided
         """
-        return self._contract.call().balanceOf(str(addressToCheck))
+        return self._contract.call().balanceOf(addressToCheck.address)
 
     def tokenWorth(self, addressToCheck):
         """
